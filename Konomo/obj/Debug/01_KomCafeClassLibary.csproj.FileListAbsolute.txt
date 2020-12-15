@@ -1,0 +1,6 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\Konomo\obj\Debug\01_KomCafeClassLibary.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\Konomo\obj\Debug\01_KomCafeClassLibary.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\Konomo\bin\Debug\Konomo.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\Konomo\bin\Debug\Konomo.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\Konomo\obj\Debug\Konomo.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\Konomo\obj\Debug\Konomo.pdb

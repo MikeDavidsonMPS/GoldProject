@@ -1,0 +1,10 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\bin\Debug\ConsoleKomCafe.exe.config
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\bin\Debug\ConsoleKomCafe.exe
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\bin\Debug\ConsoleKomCafe.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\bin\Debug\Konomo.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\bin\Debug\Konomo.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\obj\Debug\01_KomCafeConsole.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\obj\Debug\01_KomCafeConsole.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\obj\Debug\01_KomCafeConsole.csproj.CopyComplete
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\obj\Debug\ConsoleKomCafe.exe
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomCafe\obj\Debug\ConsoleKomCafe.pdb
