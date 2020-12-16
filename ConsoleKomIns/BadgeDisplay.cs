@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleKomIns
 {
-    class KomInsDisplay
+    class BadgeDisplay
     {
         static void Main(string[] args)
         {

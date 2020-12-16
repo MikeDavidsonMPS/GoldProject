@@ -1,0 +1,6 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\02_KomdoClaimsClassLibary\obj\Debug\02_KomClaimClassLibary.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\02_KomdoClaimsClassLibary\obj\Debug\02_KomClaimClassLibary.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\02_KomdoClaimsClassLibary\bin\Debug\02_KomdoClaimsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\02_KomdoClaimsClassLibary\bin\Debug\02_KomdoClaimsClassLibary.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\02_KomdoClaimsClassLibary\obj\Debug\02_KomdoClaimsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\02_KomdoClaimsClassLibary\obj\Debug\02_KomdoClaimsClassLibary.pdb

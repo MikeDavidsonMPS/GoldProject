@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4DF577B-B7FC-42AB-A797-8FC951DE8D40}</ProjectGuid>
+    <ProjectGuid>{F6FDBF93-40F0-4341-8FB3-283F2109B5C5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleKomIns</RootNamespace>
-    <AssemblyName>ConsoleKomIns</AssemblyName>
+    <RootNamespace>Dictionary</RootNamespace>
+    <AssemblyName>Dictionary</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BadgeDisplay.cs" />
-    <Compile Include="BadgeDisplayUI.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

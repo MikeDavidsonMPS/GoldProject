@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Konomo
+namespace ConsoleKomIns
 {
-    class KomIns
+    class BadgeDisplayUI
     {
+        static void Main(string[] args);
+        
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _02_KomdoClaimsClassLibary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleKomClaim
 {
-    class ClaimDisplayUI
+    public class ClaimDisplayUI
     {
         private ClaimRepo _dataClaimsRepo = new ClaimRepo();
 
@@ -43,7 +44,7 @@ namespace ConsoleKomClaim
                         break;
                     case "3":
                         // Input Claim
-                        InputNewClaim();
+                        NewClaim();
                         break;
                     case "4":
                         // End Session: Exit
@@ -62,84 +63,60 @@ namespace ConsoleKomClaim
         }
 
         // #1 VIEW CLAIMS List
-        private void DisplayClaims()
+        public void DisplayClaims()
         {
             Console.Clear();
 
-            List<ClaimLibary> listOfData = _dataClaimRepo.GetClaimLibary();
+            Queue<ClaimLibary> listOfData = _dataClaimsRepo.GetClaimsLibary();
 
             foreach (ClaimLibary data in listOfData)
             {
-                Console.WriteLine($"{data.ClaimID}, { }, {data.TypeOfClaim}, { },  {data.Description}, { }, {data.Settlement}, { }, {data.IncidentMonth}, $" / ", {data.IncidentDay}, $" / ", {data.IncidentYear}, { }, {data.ClaimMonth}, $" / ", {data.ClaimDay}, $" / ", { data.ClaimYear}");
+                Console.WriteLine($"ClaimID",   "ClaimType",   "Description",   "Settlement",   "Incident Date",   "Claim Date \n" +
+                    $"{data.ClaimID},   {data.ClaimType},   {data.Description},   {data.Settlement},   {data.IncidentDate},   {data.ClaimDate}");
             }
         }
 
 
         // #2 ASSIGN CLAIM
-        private void DisplayContentByTitle()
+        public void AssignClaim()
         {
-            Console.Clear();
-       
-            //Frist in first out
-            ClaimLibary data = _dataClaimRepo.GetdDataByClaimID(claimID); //wrong
+            Queue<ClaimLibary> claim = _dataClaimsRepo.GetClaimsLibary();
 
-
-            Queue<string> firstInFirstOut = new Queue<string>();        //wrong
-            firstInFirstOut.Enqueue("Luke")
-
-            //Display said content if it isn't null
-            if (data != null)                                           //wrong
+            string strUserChoice = string.Empty;
+            do
             {
-                Console.WriteLine($"ClaimID: {data.ClaimID}, \n" +
-                    $"Type: {data.TypeOfClaim}\n" +
-                    $"Description: {data.Description}\n" +
-                    $"Amount: {data.Settlement}\n" +
-                    $"Date of Incident: {data.IncidentDate}\n" +
-                    $"Date of Claim: {data.Claim}\n" +
-                    $"Is Claim Valid: {data.Valid}");
+                Console.WriteLine($"Next Claim Availalbe: {claim.Peek()}");
+                do
+                {
+                    Console.WriteLine("Do you accept the Claim File y/n");
+                    strUserChoice = Console.ReadLine().ToUpper();
+                    if (strUserChoice == "y")
+                    {
+                        Console.WriteLine(claim.Dequeue());
+                    }
+                } while (strUserChoice != "y" && strUserChoice != "n");
             }
-            else
-            
-            Console.WriteLine("is this the correct claim Y/N?");
-             string fristClaim = Console.ReadLine().ToLower();
-          
-            if (fristClaim == "y")                                 // this wrong
-            {
-                data.fristClaim = true;
-            }
-            else
-            {
-                data.ClaimsTermial = false;
-            }
-            if(fristClaim == "n")
-            {
-                return.ClaimsTermial;                            // this wrong
-            }
+            while (strUserChoice == "n");
         }
 
 
         // #3 Input Claims
-        private void InputNewClaim()
+        public void NewClaim()
         {
             Console.Clear();
             ClaimLibary newData = new ClaimLibary();
 
             //Claim ID
             Console.WriteLine("Enter Claim Number");
-            newData.Title = Console.ReadLine();
+            string ClaimID = Console.ReadLine();
+            newData.ClaimID = int.Parse(ClaimID);
 
-            // EMUN: ClaimType 
-            Console.WriteLine("Enter Claim Type Number:\n" +
-                "1. Car\n" +
-                "2. Home\n" +
-                "3. Theft\n");
-
-            string claimTypeAsString = Console.ReadLine();             
-            int claimTypeAsInt = int.Parse(claimTypeAsString);
-            newData.TypeOfClaim = (ClaimTypes)claimTypeAsInt;
+            //ClaimType 
+            Console.WriteLine("Enter Claim Type Number:"); 
+            newData.ClaimType = Console.ReadLine();
 
             //Description
-            Console.WriteLine("Enter the rating for the content (G, PG, PG-13, etc):");
+            Console.WriteLine("Enter a drief description:");
             newData.Description = Console.ReadLine();
 
             //Settlement
@@ -148,13 +125,13 @@ namespace ConsoleKomClaim
             newData.Settlement = double.Parse(settlement);
 
             //Incident Date
-            Console.WriteLine("Enter incident date mm/dd/yy:");
+            Console.WriteLine("Enter incident date yy/mm/dd:");
             string incidentDate = Console.ReadLine();
-
+            
             //Claim Date
-            Console.WriteLine("Enter incident date mm/dd/yy:");
+            Console.WriteLine("Enter incident date yy/mm/dd:");
             string claimDate = Console.ReadLine();
-
+            
             //Valid Claim
             Console.WriteLine("Is the claim Valid?");
             string valid = Console.ReadLine().ToLower();
@@ -168,19 +145,19 @@ namespace ConsoleKomClaim
                 newData.Valid = false;
             }
 
-            _dataClaimRepo.AddDataToList(newData);
+            _dataClaimsRepo.AddDataToList(newData);
         }
 
         // SEED METHOD
         private void SampleContent()
         {
-            ClaimLibary CarAccident = new ClaimLibary(1, ClaimType.Car, "Car Accident on 465", 400, .00,  4"/"25"/"18, 4"/"27"/"18, true);
-            ClaimLibary HouseFire = new ClaimLibary(2, ClaimType.Home, "House fire in kitchen", 4000, .00, 4"/"11"/"18, 4"/"12"/"18, true);
-            ClaimLibary PancakeTheft = new ClaimLibary(3, ClaimType.Theft, "Car Accident on 465", 4, .00, 4"/"27"/"18, 4"/"27"/"18, true);
+            ClaimLibary CarAccident = new ClaimLibary(1, "Car", "Car Accident on 465", 400.00, new DateTime(18,04,25), new DateTime(18/04/27), true);
+            ClaimLibary HouseFire = new ClaimLibary(2, "Home", "House fire in kitchen", 4000.00, new DateTime(18,04,11), new DateTime(18,04,11), true);
+            ClaimLibary PancakeTheft = new ClaimLibary(3, "Theft", "Car Accident on 465", 4.00, new DateTime(18,04,27), new DateTime(18, 04, 27), true);
 
-            _dataClaimRepo.AddDataToList(CarAccident);
-            _dataClaimRepo.AddDateToList(HouseFire);
-            _dataClaimRepo.AddDateToList(PancakeTheft);
+            _dataClaimsRepo.AddDataToList(CarAccident);
+            _dataClaimsRepo.AddDataToList(HouseFire);
+            _dataClaimsRepo.AddDataToList(PancakeTheft);
 
         }
     }

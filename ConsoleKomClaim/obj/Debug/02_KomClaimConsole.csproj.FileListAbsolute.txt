@@ -1,0 +1,10 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\obj\Debug\02_KomClaimConsole.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\obj\Debug\02_KomClaimConsole.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\bin\Debug\ConsoleKomClaim.exe.config
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\bin\Debug\ConsoleKomClaim.exe
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\bin\Debug\ConsoleKomClaim.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\bin\Debug\02_KomdoClaimsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\bin\Debug\02_KomdoClaimsClassLibary.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\obj\Debug\02_KomClaimConsole.csproj.CopyComplete
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\obj\Debug\ConsoleKomClaim.exe
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomClaim\obj\Debug\ConsoleKomClaim.pdb

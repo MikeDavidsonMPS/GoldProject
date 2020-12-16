@@ -6,45 +6,41 @@ using System.Threading.Tasks;
 
 namespace _02_KomdoClaimsClassLibary
 {
-    class ClaimRepo
+    public class ClaimRepo
     {
-        private List<ClaimsDir> _listOfClaimsData = new List<ClaimsDir>();
+        private readonly Queue<ClaimLibary> _claimsDir = new Queue<ClaimLibary>();
 
 
         //CRUD
 
         //CREATE
-        public void AddDataToList(ClaimsDir data)
+        public void AddDataToList(ClaimLibary data)
         {
-            _listOfClaimsData.Add(data);
+            _claimsDir.Enqueue(data);
         }
 
         //READ
-        public List<ClaimsDir> GetClaimsDir()
+        public Queue<ClaimLibary> GetClaimsLibary()
         {
-            return _listOfClaimsData;
+            return _claimsDir;
         }
 
         //UPDATE
-        public bool UpdateExistingData(int existingClaimID, ClaimsDir newData)
+        public bool UpdateDataFromDir(int existingClaimID, ClaimLibary newData)
         {
             //Find the original content
-            ClaimsDir currentData = GetDataByClaimID(existingClaimID);
+            ClaimLibary existingData = GetDataByClaimID(existingClaimID);
 
             //Update the content
-            if (currentData != null)
+            if (existingData != null)
             {
-                currentData.ClaimID = newData.ClaimID;
-                currentData.TypeOfClaim = newData.TypeOfClaim;
-                currentData.Description = newData.Description;
-                currentData.ClaimSettlement = newData.ClaimsSettlement;
-                currentData.IncidentMonth= newData.IncidentMonth;
-                currentData.IncidentDay = newData.IncidentDay;
-                currentData.IncidentYear = newData.IncidentDay;
-                currentData.ClaimMonth = newData.ClaimMonth;
-                currentData.ClaimDay = newData.ClaimDay;
-                currentData.ClaimYear = newData.ClaimYear;
-                currentData.Valid = newData.Valid;
+                existingData.ClaimID = newData.ClaimID;
+                existingData.ClaimType = newData.ClaimType;
+                existingData.Description = newData.Description;
+                existingData.Settlement = newData.Settlement;
+                existingData.IncidentDate = newData.IncidentDate;
+                existingData.ClaimDate = newData.ClaimDate;
+                existingData.Valid = newData.Valid;
 
                 return true;
             }
@@ -55,19 +51,19 @@ namespace _02_KomdoClaimsClassLibary
         }
 
         //DELETE
-        public bool RemoveDataFromList(int claimID)
+        public bool RemoveDataFromDir(int claimID)
         {
-            ClaimDir data = GetDataByClaimID(claimID);
+            ClaimLibary data = GetDataByClaimID(claimID);
 
             if (data == null)
             {
                 return false;
             }
 
-            int intialCount = _listOfClaimsData.Count;
-            _listOfClaimsData.Remove(data);
+            int intialCount = _claimsDir.Count;
+            _claimsDir.Dequeue();
 
-            if (intialCount > _listOfClaimsData.Count)
+            if (intialCount > _claimsDir.Count)
             {
                 return true;
             }
@@ -79,11 +75,11 @@ namespace _02_KomdoClaimsClassLibary
 
 
         //HELPER METHOD
-        public ClaimDir GetDataByClaimType(int claimType)
+        public ClaimLibary GetDataByClaimID(double claimType)
         {
-            foreach (ClaimDir data in _listOfClaimsData)
+            foreach (ClaimLibary data in _claimsDir)
             {
-                if (data.ClaimType.ToLower() == claimType.ToLower())
+                if (data.ClaimID == claimType) 
                 {
                     return data;
                 }

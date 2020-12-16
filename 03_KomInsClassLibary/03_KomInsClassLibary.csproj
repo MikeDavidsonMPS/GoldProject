@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KomInsLibary.cs" />
-    <Compile Include="KomInsRepo.cs" />
+    <Compile Include="BadgeLibary.cs" />
+    <Compile Include="BadgeRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
