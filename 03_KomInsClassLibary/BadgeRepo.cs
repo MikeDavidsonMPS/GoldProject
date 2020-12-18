@@ -8,42 +8,38 @@ namespace _03_KomInsClassLibary
 {
     public class BadgeRepo
     {
-        private readonly List<BadgeLibary> _badgeDir = new List<BadgeLibary>();
+        private readonly List<BadgeAccessDir> _badgeDir = new List<BadgeAccessDir>();
 
         //Dirtionary
 
 
-        
+
         //CRUD
 
         //CREATE
-        public void AddDataToList(BadgeLibary data)
+        public void AddDataToBadgeAccessDir(BadgeAccessDir data)
         {
             _badgeDir.Add(data);
         }
 
         //READ
-        public List<BadgeLibary> GetBadgeLibary()
+        public List<BadgeAccessDir> GetBadgeAccessDir()
         {
-            return _listOfBadgeDirData;
+            return _badgeDir;
         }
 
         //UPDATE
-        public bool UpdateExistingData(int existingClaimID, BadgeLibary newData)
+        public bool UpdateExistingBadgeDir(int existingBadgeID, BadgeAccessDir newData)
         {
             //Find the original content
-            Libary currentData = GetDataByClaimID(existingClaimID);
+            BadgeAccessDir currentData = GetDataByBadgeID(existingBadgeID);
 
             //Update the content
             if (currentData != null)
             {
-                currentData.ClaimID = newData.ClaimID;
-                currentData.ClaimType = newData.ClaimType;
-                currentData.Description = newData.Description;
-                currentData.Settlement = newData.Settlement;
-                currentData.IncidentDate = newData.IncidentDate;
-                currentData.ClaimDate = newData.ClaimDate;
-                currentData.Valid = newData.Valid;
+                currentData.BadgeID = newData.BadgeID;
+                currentData.DoorAccess = newData.DoorAccess;
+
 
                 return true;
             }
@@ -54,19 +50,19 @@ namespace _03_KomInsClassLibary
         }
 
         //DELETE
-        public bool RemoveDataFromList(int claimID)
+        public bool RemoveDataFromBadgeDir(double badgeID)
         {
-            ClaimLibary data = GetDataByClaimID(claimID);
+            BadgeAccessDir data = GetDataByBadgeID(badgeID);
 
             if (data == null)
             {
                 return false;
             }
 
-            int intialCount = _listOfClaimsData.Count;
-            _listOfClaimsData.Remove(data);
+            int intialCount = _badgeDir.Count;
+            _badgeDir.Remove(data);
 
-            if (intialCount > _listOfClaimsData.Count)
+            if (intialCount > _badgeDir.Count)
             {
                 return true;
             }
@@ -78,11 +74,11 @@ namespace _03_KomInsClassLibary
 
 
         //HELPER METHOD
-        public ClaimLibary GetDataByClaimType(string claimType)
+        public BadgeAccessDir GetDataByBadgeID(double badgeID)
         {
-            foreach (ClaimLibary data in _listOfClaimsData)
+            foreach (BadgeAccessDir data in _badgeDir)
             {
-                if (data.ClaimType.ToLower() == claimType.ToLower())
+                if (data.BadgeID == badgeID)
                 {
                     return data;
                 }
@@ -91,4 +87,6 @@ namespace _03_KomInsClassLibary
 
             return null;
         }
+    }
 }
+

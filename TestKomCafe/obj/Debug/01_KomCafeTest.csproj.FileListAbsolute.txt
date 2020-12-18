@@ -1,0 +1,16 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\TestKomCafe.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\TestKomCafe.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Konomo.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Konomo.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\obj\Debug\01_KomCafeTest.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\obj\Debug\01_KomCafeTest.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\obj\Debug\01_KomCafeTest.csproj.CopyComplete
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\obj\Debug\TestKomCafe.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\TestKomCafe\obj\Debug\TestKomCafe.pdb

@@ -51,7 +51,7 @@ namespace _02_KomdoClaimsClassLibary
         }
 
         //DELETE
-        public bool RemoveDataFromDir(int claimID)
+        public bool RemoveDataFromDir(double claimID)
         {
             ClaimLibary data = GetDataByClaimID(claimID);
 

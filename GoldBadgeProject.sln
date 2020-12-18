@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_KomCafeConsole", "Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomClaimConsole", "ConsoleKomClaim\02_KomClaimConsole.csproj", "{F52AFE92-F895-467C-BF29-5D70655B773E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomInsConsole", "ConsoleKomIns\03_KomInsConsole.csproj", "{E4DF577B-B7FC-42AB-A797-8FC951DE8D40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomBadgeConsole", "ConsoleKomIns\03_KomBadgeConsole.csproj", "{E4DF577B-B7FC-42AB-A797-8FC951DE8D40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_KomCafeTest", "TestKomCafe\01_KomCafeTest.csproj", "{BC1F09EC-7515-4CD3-AC02-53BD63CC1960}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomInsTest", "07_TestKom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomClaimClassLibary", "02_KomdoClaimsClassLibary\02_KomClaimClassLibary.csproj", "{ABD9520C-3CC5-4B39-9829-BCF5A3167CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomInsClassLibary", "03_KomInsClassLibary\03_KomInsClassLibary.csproj", "{AE64222C-DF40-4EE3-9BB9-F5579FFC5E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomBadgeClassLibary", "03_KomInsClassLibary\03_KomBadgeClassLibary.csproj", "{AE64222C-DF40-4EE3-9BB9-F5579FFC5E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

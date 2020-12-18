@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace _07_TestKomIns
+namespace _03_KomInsTest
 {
     [TestClass]
     public class BadgeTest

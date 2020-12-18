@@ -25,13 +25,12 @@ namespace _01_KomCafeClassLibary
             return _cafeDir;
         }
 
-        //UPDATE = = advised to leave out update for the this project
-        //public bool UpdateExistData();
+          //Update N/A
 
           //Delete
-        public bool RemoveDataFromDir(string mealName)
+        public bool RemoveDataFromDir(int mealNumber)
         {
-            CafeLibary data = GetDataWithMealName(mealName);  
+            CafeLibary data = GetDataWithMealNumber(mealNumber);  
 
             if (data == null)
             {
@@ -51,12 +50,12 @@ namespace _01_KomCafeClassLibary
             }
         }
 
-          //Helper Method --- Problem
-        public CafeLibary GetDataWithMealName(string mealName)
+          //Helper Method
+        public CafeLibary GetDataWithMealNumber(int mealNumber)
         {
-            foreach(CafeLibary date in _cafeDir)
+            foreach (CafeLibary date in _cafeDir)
             {
-                if (date.MealName.ToLower() == mealName.ToLower())
+                if (date.MealNumber == mealNumber)
                 {
                     return date;
                 }

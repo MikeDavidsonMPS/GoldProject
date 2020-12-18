@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace _03_KomInsClassLibary
 {
       // POCO
-    public class BadgeLibary
+    public class BadgeAccessDir
     {
         public int BadgeID { get; set; }
         public string DoorAccess{ get; set; }
 
-        public BadgeLibary() { }
+        public BadgeAccessDir() { }
 
-        public BadgeLibary(int badgeID, string doorAccess)
+        public BadgeAccessDir(int badgeID, string doorAccess)
         {
             BadgeID = badgeID;
             DoorAccess= doorAccess;

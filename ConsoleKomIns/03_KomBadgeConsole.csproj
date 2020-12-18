@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\03_KomInsClassLibary\03_KomBadgeClassLibary.csproj">
+      <Project>{ae64222c-df40-4ee3-9bb9-f5579ffc5e48}</Project>
+      <Name>03_KomBadgeClassLibary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

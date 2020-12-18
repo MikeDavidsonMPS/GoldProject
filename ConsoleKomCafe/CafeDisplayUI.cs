@@ -18,7 +18,7 @@ namespace _01_KomCafeConsole
             Menu();
         }
 
-           // #1 MENU
+           // MENU Display and Input
         private void Menu()
         {
             bool keepRunning = true;
@@ -51,14 +51,12 @@ namespace _01_KomCafeConsole
                         keepRunning = false;
                         break;
                 }
-
-                Console.WriteLine("Please make another selection");
                 Console.ReadKey();
                 Console.Clear();
             }
         }
 
-              // #2 CREATE NEW == User input forum == New Data
+              // #1 New Input
         private void NewEntry()
         {
             Console.Clear();
@@ -91,7 +89,7 @@ namespace _01_KomCafeConsole
         }
 
 
-            // #3 VIEW CURRENT == Currenting CafeLibary  
+            // #2 View Menu  
         private void ViewMenu()
         {
             Console.Clear();
@@ -109,15 +107,15 @@ namespace _01_KomCafeConsole
             }
         }
 
-           // #4 VIEW EXISTING data
+           // #3 Delete Data
         private void DisplaybyMealNumber()
         {
             Console.Clear();
-            Console.WriteLine("Enter the number of the meal you would like to order");
+            Console.WriteLine("Enter meal number to remove");
 
-            string mealName = Console.ReadLine();
-
-            CafeLibary data = _dataRepo.GetDataWithMealName(mealName);
+            string mealNumber = Console.ReadLine();
+            int result = Convert.ToInt32(mealNumber);
+            CafeLibary data = _dataRepo.GetDataWithMealNumber(result);
 
             if (data != null)
             {
@@ -131,7 +129,7 @@ namespace _01_KomCafeConsole
                 Console.WriteLine("That Item is Not Available. Please Make Another Selection ");
             }
         }
-           // #6 DELETE EXISTING Content
+           // #3A Delete Content
         private void RemoveSelection()
         {
             ViewMenu();
@@ -139,8 +137,8 @@ namespace _01_KomCafeConsole
                 //menu choice to be removed
             Console.WriteLine("Enter The Menu Selection To Be Remove:");
             string input = Console.ReadLine();
-
-            bool wasDeleted = _dataRepo.RemoveDataFromDir(input);  //problem
+            int result = Convert.ToInt32(input);
+            bool wasDeleted = _dataRepo.RemoveDataFromDir(result);  
            
                 //If the content was deleted, say no
             if (wasDeleted)
@@ -149,7 +147,7 @@ namespace _01_KomCafeConsole
             }
             else
             {
-                Console.WriteLine("The Slection was not deleted.");
+                Console.WriteLine("The Selection was not deleted.");
             }
 
         }
@@ -159,7 +157,7 @@ namespace _01_KomCafeConsole
 
         }
 
-            // #7 SEED METHOD
+            // SEED METHOD
         private void ExampleData()
         {
             CafeLibary BLT = new CafeLibary(1, "BLT", "Bacon Lettuce and Tomato Sandwich", "Pork Bacon Lettuce, Tomato, Mayo and Rye Bread", 4.99);
