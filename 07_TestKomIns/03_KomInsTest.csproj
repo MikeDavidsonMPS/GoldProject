@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\03_KomInsClassLibary\03_KomBadgeClassLibary.csproj">
+    <ProjectReference Include="..\03_KomInsClassLibary\03_KomBadgeClassLibrary.csproj">
       <Project>{ae64222c-df40-4ee3-9bb9-f5579ffc5e48}</Project>
-      <Name>03_KomBadgeClassLibary</Name>
+      <Name>03_KomBadgeClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -1,0 +1,16 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\obj\Debug\02_KomClaimTest.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\obj\Debug\02_KomClaimTest.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\05_TestKomClaim.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\05_TestKomClaim.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\02_KomdoClaimsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\02_KomdoClaimsClassLibary.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\obj\Debug\02_KomClaimTest.csproj.CopyComplete
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\obj\Debug\05_TestKomClaim.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\05_TestKomClaim\obj\Debug\05_TestKomClaim.pdb

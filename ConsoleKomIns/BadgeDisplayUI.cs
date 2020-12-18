@@ -1,4 +1,4 @@
-﻿using _03_KomInsClassLibary;
+﻿using _03_KomInsClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace _03_KomBadgeConsole
 {
     class BadgeDisplayUI
     {
-        private BadgeAccessDir _dataRepo = new BadgeAccessDir();
+        private BadgeRepo _badgeDir = new BadgeRepo();
 
         public void Run()
         {
@@ -38,18 +38,23 @@ namespace _03_KomBadgeConsole
                 switch (userInput)
                 {
                     case "1":
+                        //Input 
                         NewID();
                         break;
                     case "2":
-                        UpdaeID();
+                        //Update
+                        UpdateID();
                         break;
                     case "3":
-                        DisplayID();
+                        //Display 
+                        DisplayIDs();
                         break;
+                        //Remove
                     case "4":
                         RemoveID();
                         break;
-                    case "5":                                                                                                    
+                    case "5": 
+                        //Exit
                         Console.WriteLine("Thank You");
                         keepRunning = false;
                         break;
@@ -76,41 +81,19 @@ namespace _03_KomBadgeConsole
             //Door Access
             Console.WriteLine("Enter Door Access");
             newData.DoorAccess = Console.ReadLine();
-        
-            if(DoorAccess = null)
 
-
-            _dataRepo.AddDataToBadgeAccessDir(newData);
+            _badgeDir.AddDataToList(newData);
         }
 
-
-        // #2 Diplay ID 
+        // #2 Update
         private void UpdateID()
-        {
-            Console.Clear();
-
-            List<CafeLibary> listOfData = _dataRepo.GetCafeLibaries();
-
-            foreach (CafeLibary data in listOfData)
-            {
-                Console.WriteLine($"{data.MealNumber}, {data.MealName},\n" +
-                       $"{data.Description},\n" +
-                       $"Ingredients:\n" +
-                       $"{data.Ingredients},\n" +
-                       $"Price:\n" +
-                       $"{data.Price}");
-            }
-        }
-
-        // #4 Update
-        private void DisplaybyBadgeID()
         {
             Console.Clear();
             Console.WriteLine("Enter The BadgeID");
 
-            string mealName = Console.ReadLine();
-
-            BadgeAccessDir data = _dataRepo.GetDataWithBadgeID(BadgeID);
+            string badgeID= Console.ReadLine();
+            int result = Convert.ToInt32(badgeID);
+            BadgeAccessDir data = _badgeDir.GetDataByBadgeID(result);
 
             if (data != null)
             {
@@ -122,31 +105,40 @@ namespace _03_KomBadgeConsole
                 Console.WriteLine("Press any key return to terminal");    //wrong Console
             }
         }
-        // #5 DELETE 
-        private void RemoveSelection()
+
+        // #3 Diplay ID 
+        private void DisplayIDs()
         {
-            ViewMenu();
+            Console.Clear();
 
-            //menu choice to be removed
-            Console.WriteLine("Enter BadgeID for Remove:");
-            string input = Console.ReadLine();
+            List<BadgeAccessDir> listOfData = _badgeDir.GetBadgeAccessDir();
 
-            bool wasDeleted = _dataRepo.RemoveDataFromBadgeDir(input);  //problem
+            foreach (BadgeAccessDir data in listOfData)
+            {
+                Console.WriteLine($"{data.BadgeID}, {data.DoorAccess}"); 
+            }
+        }
 
-            //If the content was deleted, say no
+
+        // #4 DELETE 
+        private void RemoveID()
+        {
+            DisplayIDs();
+
+            Console.WriteLine("ID number for Remove:");
+
+            string badgeID = Console.ReadLine();
+            int result = Convert.ToInt32(badgeID);
+            bool wasDeleted = _badgeDir.RemoveDataFromBadgeDir(result);  
+
             if (wasDeleted)
             {
-                Console.WriteLine("Your ID was deleted.");
+                Console.WriteLine("ID was deleted.");
             }
             else
             {
                 Console.WriteLine("The ID was not deleted.");
             }
-
-        }
-        // #5a DELETE Existing Content
-        private void RemoveBadgeIDSelection()
-        {
 
         }
 
@@ -157,9 +149,9 @@ namespace _03_KomBadgeConsole
             BadgeAccessDir BadgeTwo = new BadgeAccessDir(22345, "A1, A4, B1, B2");
             BadgeAccessDir BadgeThree = new BadgeAccessDir(32345, "A4, A5");
 
-            _dataRepo.AddDatatoBadgeID(BadgeOne);
-            _dataRepo.AddDatatoBadgeID(BadgeTwo);
-            _dataRepo.AddDatatoBadgeID(BadgeThree);
+            _badgeDir.AddDataToList(BadgeOne);
+            _badgeDir.AddDataToList(BadgeTwo);
+            _badgeDir.AddDataToList(BadgeThree);
 
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03_KomInsClassLibary
+namespace _03_KomInsClassLibrary
 {
       // POCO
     public class BadgeAccessDir

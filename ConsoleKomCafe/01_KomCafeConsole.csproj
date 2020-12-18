@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Konomo\01_KomCafeClassLibary.csproj">
+    <ProjectReference Include="..\Konomo\01_KomCafeClassLibrary.csproj">
       <Project>{809dfa05-0eb4-4e50-8a32-013b35c97dbb}</Project>
-      <Name>01_KomCafeClassLibary</Name>
+      <Name>01_KomCafeClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,16 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\07_TestKomIns.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\07_TestKomIns.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\03_KomInsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\03_KomInsClassLibary.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\obj\Debug\03_KomInsTest.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\obj\Debug\03_KomInsTest.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\obj\Debug\03_KomInsTest.csproj.CopyComplete
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\obj\Debug\07_TestKomIns.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\07_TestKomIns\obj\Debug\07_TestKomIns.pdb

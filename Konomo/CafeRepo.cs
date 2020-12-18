@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_KomCafeClassLibary
+namespace _01_KomCafeClassLibrary
 {
         
     public class CafeRepo
     {
-        private readonly List<CafeLibary> _cafeDir = new List<CafeLibary>();
+        private readonly List<CafeLibrary> _cafeDir = new List<CafeLibrary>();
 
            //CRUD  (no "Update" to CRUD is needed)
 
            //Create
-        public void AddDatatoMenu(CafeLibary data)
+        public void AddDatatoMenu(CafeLibrary data)
         {
             _cafeDir.Add(data);
         }
 
            //Read
-        public List<CafeLibary> GetCafeLibaries()
+        public List<CafeLibrary> GetCafeLibaries()
         {
             return _cafeDir;
         }
@@ -30,7 +30,7 @@ namespace _01_KomCafeClassLibary
           //Delete
         public bool RemoveDataFromDir(int mealNumber)
         {
-            CafeLibary data = GetDataWithMealNumber(mealNumber);  
+            CafeLibrary data = GetDataWithMealNumber(mealNumber);  
 
             if (data == null)
             {
@@ -51,9 +51,9 @@ namespace _01_KomCafeClassLibary
         }
 
           //Helper Method
-        public CafeLibary GetDataWithMealNumber(int mealNumber)
+        public CafeLibrary GetDataWithMealNumber(int mealNumber)
         {
-            foreach (CafeLibary date in _cafeDir)
+            foreach (CafeLibrary date in _cafeDir)
             {
                 if (date.MealNumber == mealNumber)
                 {

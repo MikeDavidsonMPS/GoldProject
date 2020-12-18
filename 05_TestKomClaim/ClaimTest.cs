@@ -1,14 +1,14 @@
 ﻿using System;
-using _02_KomdoClaimsClassLibary;
+using _02_KomdoClaimsClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace _05_TestKomClaim
 {
     [TestClass]
-    public class CafeTest
+    public class ClaimTest
     {
         private ClaimRepo _repo;
-        private ClaimLibary _data;
+        private ClaimLibrary _data;
 
 
 
@@ -17,23 +17,23 @@ namespace _05_TestKomClaim
         public void Arrange()
         {
             _repo = new ClaimRepo();
-            _data = new ClaimLibary(1, "Car", "Car Accident on 465", 400.00, new DateTime(18, 04, 25), new DateTime(18 / 04 / 27), true);
+            _data = new ClaimLibrary(1, "Car", "Car Accident on 465", 400.00, new DateTime(18, 04, 25), new DateTime(18 / 04 / 27), true);
 
             _repo.AddDataToList(_data);
         }
 
         //add method
         [TestMethod]
-        public void AddToList_Null()
+        public void AddToList()
         {
             // Arrange 
-            ClaimLibary data = new ClaimLibary();
+            ClaimLibrary data = new ClaimLibrary();
             data.ClaimID = 1;
             ClaimRepo repository = new ClaimRepo();
 
             // Act 
             repository.AddDataToList(data);
-            ClaimLibary dataFromDir = repository.GetDataByClaimID(1);
+            ClaimLibrary dataFromDir = repository.GetDataByClaimID(1);
 
             // Assert 
             Assert.IsNotNull(dataFromDir);
@@ -45,7 +45,7 @@ namespace _05_TestKomClaim
         {
             //Arrange
             // TestInitialize
-            ClaimLibary newData = new ClaimLibary(1, "Car", "Car Accident on 465", 400.00, new DateTime(18, 04, 25), new DateTime(18 / 04 / 27), true);
+            ClaimLibrary newData = new ClaimLibrary(1, "Car", "Car Accident on 465", 400.00, new DateTime(18, 04, 25), new DateTime(18 / 04 / 27), true);
 
 
             //Act
@@ -61,11 +61,11 @@ namespace _05_TestKomClaim
         {
             //Arrange
             // TestInitialize
-            ClaimLibary newContent = new ClaimLibary(1, "Car", "Car Accident on 465", 400.00, new DateTime(18, 04, 25), new DateTime(18 / 04 / 27), true);
+            ClaimLibrary newData = new ClaimLibrary(2, "Car", "Car Accident on 465", 400.00, new DateTime(18, 04, 25), new DateTime(18 / 04 / 27), true);
 
 
             //Act
-            bool Result = _repo.UpdateDataFromDir(originalClaimID, newContent);
+            bool Result = _repo.UpdateDataFromDir(originalClaimID, newData);
 
             //Assert
             Assert.AreEqual(Update, Result);
@@ -84,3 +84,5 @@ namespace _05_TestKomClaim
             Assert.IsTrue(deleteResult);
         }
     }
+    
+}

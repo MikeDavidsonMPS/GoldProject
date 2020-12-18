@@ -1,0 +1,6 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\03_KomInsClassLibary\bin\Debug\03_KomInsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\03_KomInsClassLibary\bin\Debug\03_KomInsClassLibary.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\03_KomInsClassLibary\obj\Debug\03_KomBadgeClassLibrary.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\03_KomInsClassLibary\obj\Debug\03_KomBadgeClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\03_KomInsClassLibary\obj\Debug\03_KomInsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\03_KomInsClassLibary\obj\Debug\03_KomInsClassLibary.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03_KomInsClassLibary
+namespace _03_KomInsClassLibrary
 {
     public class BadgeRepo
     {
@@ -17,7 +17,7 @@ namespace _03_KomInsClassLibary
         //CRUD
 
         //CREATE
-        public void AddDataToBadgeAccessDir(BadgeAccessDir data)
+        public void AddDataToList(BadgeAccessDir data)
         {
             _badgeDir.Add(data);
         }

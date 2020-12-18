@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_KomdoClaimsClassLibary
+namespace _02_KomdoClaimsClassLibrary
 {
        // POCO
-    public class ClaimLibary
+    public class ClaimLibrary
     {
         public int ClaimID { get; set; }
         public string ClaimType { get; set; }
@@ -18,9 +18,9 @@ namespace _02_KomdoClaimsClassLibary
         public bool Valid{ get; set; }
         
 
-       public ClaimLibary() { }
+       public ClaimLibrary() { }
 
-       public ClaimLibary (int claimID, string claimType, string description, double settlement, DateTime incidentDate, DateTime claimDate, bool valid)
+       public ClaimLibrary (int claimID, string claimType, string description, double settlement, DateTime incidentDate, DateTime claimDate, bool valid)
        {
             ClaimID = claimID;
             ClaimType = claimType;

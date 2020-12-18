@@ -4,32 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_KomdoClaimsClassLibary
+namespace _02_KomdoClaimsClassLibrary
 {
     public class ClaimRepo
     {
-        private readonly Queue<ClaimLibary> _claimsDir = new Queue<ClaimLibary>();
+        private readonly Queue<ClaimLibrary> _claimsDir = new Queue<ClaimLibrary>();
 
 
         //CRUD
 
         //CREATE
-        public void AddDataToList(ClaimLibary data)
+        public void AddDataToList(ClaimLibrary data)
         {
             _claimsDir.Enqueue(data);
         }
 
         //READ
-        public Queue<ClaimLibary> GetClaimsLibary()
+        public Queue<ClaimLibrary> GetClaimsLibary()
         {
             return _claimsDir;
         }
 
         //UPDATE
-        public bool UpdateDataFromDir(int existingClaimID, ClaimLibary newData)
+        public bool UpdateDataFromDir(int existingClaimID, ClaimLibrary newData)
         {
             //Find the original content
-            ClaimLibary existingData = GetDataByClaimID(existingClaimID);
+            ClaimLibrary existingData = GetDataByClaimID(existingClaimID);
 
             //Update the content
             if (existingData != null)
@@ -53,7 +53,7 @@ namespace _02_KomdoClaimsClassLibary
         //DELETE
         public bool RemoveDataFromDir(double claimID)
         {
-            ClaimLibary data = GetDataByClaimID(claimID);
+            ClaimLibrary data = GetDataByClaimID(claimID);
 
             if (data == null)
             {
@@ -75,9 +75,9 @@ namespace _02_KomdoClaimsClassLibary
 
 
         //HELPER METHOD
-        public ClaimLibary GetDataByClaimID(double claimType)
+        public ClaimLibrary GetDataByClaimID(double claimType)
         {
-            foreach (ClaimLibary data in _claimsDir)
+            foreach (ClaimLibrary data in _claimsDir)
             {
                 if (data.ClaimID == claimType) 
                 {

@@ -1,5 +1,5 @@
 ﻿using System;
-using _01_KomCafeClassLibary;
+using _01_KomCafeClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestKomCafe
@@ -8,7 +8,7 @@ namespace TestKomCafe
     public class CafeTest
     {
         private CafeRepo _repo;
-        private CafeLibary _data;
+        private CafeLibrary _data;
 
 
 
@@ -17,7 +17,7 @@ namespace TestKomCafe
         public void Arrange()
         {
             _repo = new CafeRepo();
-            _data = new CafeLibary(1, "BLT", "Bacon Lettuce and Tomato Sandwich", "Pork Bacon Lettuce, Tomato, Mayo and Rye Bread", 4.99);
+            _data = new CafeLibrary(1, "BLT", "Bacon Lettuce and Tomato Sandwich", "Pork Bacon Lettuce, Tomato, Mayo and Rye Bread", 4.99);
 
             _repo.AddDatatoMenu(_data);
         }
@@ -27,13 +27,13 @@ namespace TestKomCafe
         public void AddToListNull()
         {
             // Arrange 
-            CafeLibary data = new CafeLibary();
+            CafeLibrary data = new CafeLibrary();
             data.MealNumber = 1;
             CafeRepo repository = new CafeRepo();
 
             // Act 
             repository.AddDatatoMenu(data);
-            CafeLibary dataFromDir = repository.GetDataWithMealNumber(1);
+            CafeLibrary dataFromDir = repository.GetDataWithMealNumber(1);
 
             // Assert 
             Assert.IsNotNull(dataFromDir);

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_KomCafeClassLibary
+namespace _01_KomCafeClassLibrary
 {
-    public class CafeLibary
+    public class CafeLibrary
     {
         public int MealNumber { get; set; }
         public string MealName { get; set; }
@@ -15,14 +15,14 @@ namespace _01_KomCafeClassLibary
         public double Price { get; set; }
 
 
-        public CafeLibary()
+        public CafeLibrary()
         {
 
 
         }
 
 
-        public CafeLibary(int mealNumber, string mealName, string description, string ingredients, double price)
+        public CafeLibrary(int mealNumber, string mealName, string description, string ingredients, double price)
         {
             MealNumber = mealNumber;
             MealName = mealName;

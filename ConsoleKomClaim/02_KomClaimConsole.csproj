@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\02_KomdoClaimsClassLibary\02_KomClaimClassLibary.csproj">
+    <ProjectReference Include="..\02_KomdoClaimsClassLibary\02_KomClaimClassLibrary.csproj">
       <Project>{abd9520c-3cc5-4b39-9829-bcf5a3167ca5}</Project>
-      <Name>02_KomClaimClassLibary</Name>
+      <Name>02_KomClaimClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

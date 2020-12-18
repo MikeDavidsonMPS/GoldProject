@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_KomCafeClassLibary", "Konomo\01_KomCafeClassLibary.csproj", "{809DFA05-0EB4-4E50-8A32-013B35C97DBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_KomCafeClassLibrary", "Konomo\01_KomCafeClassLibrary.csproj", "{809DFA05-0EB4-4E50-8A32-013B35C97DBB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_KomCafeConsole", "ConsoleKomCafe\01_KomCafeConsole.csproj", "{C05C0311-F633-45B4-9A75-645F536BA999}"
 EndProject
@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomClaimTest", "05_TestK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomInsTest", "07_TestKomIns\03_KomInsTest.csproj", "{97A419BF-0AB3-4647-B0E6-5C4E8893B311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomClaimClassLibary", "02_KomdoClaimsClassLibary\02_KomClaimClassLibary.csproj", "{ABD9520C-3CC5-4B39-9829-BCF5A3167CA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomClaimClassLibrary", "02_KomdoClaimsClassLibary\02_KomClaimClassLibrary.csproj", "{ABD9520C-3CC5-4B39-9829-BCF5A3167CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomBadgeClassLibary", "03_KomInsClassLibary\03_KomBadgeClassLibary.csproj", "{AE64222C-DF40-4EE3-9BB9-F5579FFC5E48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomBadgeClassLibrary", "03_KomInsClassLibary\03_KomBadgeClassLibrary.csproj", "{AE64222C-DF40-4EE3-9BB9-F5579FFC5E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

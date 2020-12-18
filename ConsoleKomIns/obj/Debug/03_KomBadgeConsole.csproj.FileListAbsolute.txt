@@ -1,0 +1,10 @@
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\obj\Debug\03_KomBadgeConsole.csprojAssemblyReference.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\obj\Debug\03_KomBadgeConsole.csproj.CoreCompileInputs.cache
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\bin\Debug\ConsoleKomIns.exe.config
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\bin\Debug\ConsoleKomIns.exe
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\bin\Debug\ConsoleKomIns.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\bin\Debug\03_KomInsClassLibary.dll
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\bin\Debug\03_KomInsClassLibary.pdb
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\obj\Debug\03_KomBadgeConsole.csproj.CopyComplete
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\obj\Debug\ConsoleKomIns.exe
+C:\Users\merid\Documents\ElevenFiftyProjects\GoldBadgeProject\ConsoleKomIns\obj\Debug\ConsoleKomIns.pdb

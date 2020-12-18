@@ -1,4 +1,4 @@
-﻿using _01_KomCafeClassLibary;
+﻿using _01_KomCafeClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,7 +60,7 @@ namespace _01_KomCafeConsole
         private void NewEntry()
         {
             Console.Clear();
-            CafeLibary newData = new CafeLibary();
+            CafeLibrary newData = new CafeLibrary();
 
             //MealNumber
             Console.WriteLine("Enter Number");
@@ -94,9 +94,9 @@ namespace _01_KomCafeConsole
         {
             Console.Clear();
 
-            List<CafeLibary> listOfData = _dataRepo.GetCafeLibaries();
+            List<CafeLibrary> listOfData = _dataRepo.GetCafeLibaries();
 
-            foreach(CafeLibary data in listOfData)
+            foreach(CafeLibrary data in listOfData)
             {
                 Console.WriteLine($"{data.MealNumber}, {data.MealName},\n" +
                        $"{data.Description},\n" +
@@ -115,7 +115,7 @@ namespace _01_KomCafeConsole
 
             string mealNumber = Console.ReadLine();
             int result = Convert.ToInt32(mealNumber);
-            CafeLibary data = _dataRepo.GetDataWithMealNumber(result);
+            CafeLibrary data = _dataRepo.GetDataWithMealNumber(result);
 
             if (data != null)
             {
@@ -160,9 +160,9 @@ namespace _01_KomCafeConsole
             // SEED METHOD
         private void ExampleData()
         {
-            CafeLibary BLT = new CafeLibary(1, "BLT", "Bacon Lettuce and Tomato Sandwich", "Pork Bacon Lettuce, Tomato, Mayo and Rye Bread", 4.99);
-            CafeLibary Hamburger = new CafeLibary(2, "Hamburger", "Angus Beef with American Cheese on a WHole Wheat Bun", "Beef, American Cheese, Lettuce, Onion, Tomato and Wheat Bread", 5.99);
-            CafeLibary Reuben = new CafeLibary(3, "Reuben Sandwich", "Grilled Corn Beef Sandwich serviced with a dill Pickel", "Corn Beef, Swiss Cheese,Sauerkraut and Russian Dressing", 8.99);
+            CafeLibrary BLT = new CafeLibrary(1, "BLT", "Bacon Lettuce and Tomato Sandwich", "Pork Bacon Lettuce, Tomato, Mayo and Rye Bread", 4.99);
+            CafeLibrary Hamburger = new CafeLibrary(2, "Hamburger", "Angus Beef with American Cheese on a WHole Wheat Bun", "Beef, American Cheese, Lettuce, Onion, Tomato and Wheat Bread", 5.99);
+            CafeLibrary Reuben = new CafeLibrary(3, "Reuben Sandwich", "Grilled Corn Beef Sandwich serviced with a dill Pickel", "Corn Beef, Swiss Cheese,Sauerkraut and Russian Dressing", 8.99);
 
             _dataRepo.AddDatatoMenu(BLT);
             _dataRepo.AddDatatoMenu(Hamburger);
